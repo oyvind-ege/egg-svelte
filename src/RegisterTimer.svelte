@@ -1,5 +1,5 @@
 <script>
-  import { createEventDispatcher } from 'svelte';
+  import { createEventDispatcher, onMount } from 'svelte';
 
   const dispatch = createEventDispatcher();
 
@@ -14,7 +14,17 @@
     { type: "Hard Boiled", temperature: 85 }
   ]
 
-  const eggOptions = ['none'];
+  let eggOptions = [{ type: "Loading...", temperature: 65 }];
+
+  const setEggOptions = async () => {
+    const res = await fetch('http://localhost:8080/api/regions');
+    const data = await res.json();
+    eggOptions = data.data[0].eggs;
+  }
+
+  onMount(async () => {
+    await setEggOptions();
+  });
 
   let egg = {
     size: 15,
