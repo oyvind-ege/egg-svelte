@@ -1,7 +1,7 @@
 const app = require('./server');
+require('dotenv').config();
 
-const PORT = 8080;
-
-app.listen(PORT, () => {
-  console.log(`App started and available at http://localhost:${PORT}`);
+app.listen(process.env.SERVER_PORT, () => {
+  // eslint-disable-next-line no-console
+  console.log(`App started and available at http://localhost:${process.env.SERVER_PORT}`);
 });
