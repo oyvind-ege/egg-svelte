@@ -6,6 +6,7 @@
     "build": "rollup -c",
     "lint": "eslint",
     "dev": "rollup -c -w",
+    "init": "nodemon --exec npm start --ignore './public' -e js,svelte,html,json,mjs ",
     "start": "npm run build && node server.js",
     "complete": "npm run lint && npm run start"
   },
@@ -16,6 +17,7 @@
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-svelte3": "^2.7.3",
+    "nodemon": "^2.0.4",
     "rollup": "^2.3.4",
     "rollup-plugin-livereload": "^1.0.0",
     "rollup-plugin-svelte": "^5.0.3",
