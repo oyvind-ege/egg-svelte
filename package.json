@@ -6,8 +6,9 @@
     "build": "rollup -c",
     "lint": "eslint",
     "dev": "rollup -c -w",
+    "test": "jest",
     "init": "nodemon --exec npm start --ignore './public' -e js,svelte,html,json,mjs ",
-    "start": "npm run build && node server.js",
+    "start": "npm run test && npm run build && node start.js",
     "complete": "npm run lint && npm run start"
   },
   "devDependencies": {
@@ -17,11 +18,13 @@
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-svelte3": "^2.7.3",
+    "jest": "^26.1.0",
     "nodemon": "^2.0.4",
     "rollup": "^2.3.4",
     "rollup-plugin-livereload": "^1.0.0",
     "rollup-plugin-svelte": "^5.0.3",
     "rollup-plugin-terser": "^5.1.2",
+    "supertest": "^4.0.2",
     "svelte": "^3.0.0"
   },
   "dependencies": {

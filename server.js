@@ -1,12 +1,11 @@
 const express = require('express');
 const path = require('path');
 
-const PORT = 8080;
+const api = require('./api');
 
 const app = express();
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/api', api);
 
-app.listen(PORT, () => {
-  console.log(`App started and available at http://localhost:${PORT}`);
-});
+module.exports = app;
