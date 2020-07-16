@@ -1,0 +1,23 @@
+[
+  {
+    "region": "europe",
+    "eggs": [
+      {
+        "name": "Small",
+        "size": 13.7
+      },
+      {
+        "name": "Medium",
+        "size": 14.5
+      },
+      {
+        "name": "Large",
+        "size": 15.5
+      },
+      {
+        "name": "Extra Large",
+        "size": 16.6
+      }
+    ]
+  }
+]
