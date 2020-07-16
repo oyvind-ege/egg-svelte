@@ -6,6 +6,9 @@
   let active = true;
   let intervalID;
 
+  $: minutes = Math.floor(secondsRemaining / 60);
+  $: seconds = Math.floor(secondsRemaining - minutes * 60).toString().padStart(2, '0');
+
   const updateTimer = () => {
     if (secondsRemaining === 1){
       clearInterval(intervalID);
@@ -19,7 +22,6 @@
       updateTimer();
     }, 1000)
   });
-  
 </script>
 
 <style>
@@ -34,7 +36,7 @@
   }
 </style>
 
-<article class:active="{active === false}">
-  <p>Remaining time: {secondsRemaining}</p>
+<article class:timer="{active === true}" class:active="{active === false}">
+  <p>{minutes}:{seconds}</p>
 </article>
 
