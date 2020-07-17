@@ -1,6 +1,7 @@
 # egg-svelte
-An egg timer built using Svelte, integrated with Elevation API using geolocation data.
+An egg timer using Svelte for frontend and Express for backend.
 
+A one-day project built during my time at SALT. 
 
 ## Basic flow
 
