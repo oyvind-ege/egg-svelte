@@ -1,11 +1,9 @@
 # egg-svelte
-An egg timer that takes your location/altitude into account, using Svelte for frontend and Express for backend.
+An egg timer that takes your location/altitude into account. The project consists of a clientside, using Svelte, and a REST API built with Express.
 
 A one-day project built during my time at SALT. 
 
 ## Basic flow
-
-The project consists of a clientside, using Svelte, and a REST API built with Express.
 
 Client needs two key variables to compute boiling time: egg-size, and elevation.
 
