@@ -9,6 +9,10 @@
   $: minutes = Math.floor(secondsRemaining / 60);
   $: seconds = Math.floor(secondsRemaining - minutes * 60).toString().padStart(2, '0');
 
+  const setInactive = () => {
+    console.log('Should set to inactive.');
+  }
+
   const updateTimer = () => {
     if (secondsRemaining === 1){
       clearInterval(intervalID);
@@ -25,18 +29,36 @@
 </script>
 
 <style>
+
+  article {
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+
   .timer {
-    background-color: blue;
-    color: white;
+    background-color: #FFF7A7;
+    border: 0.5px solid #5C3A89;
+    color: black;
   }
 
   .active {
-    background-color: red;
+    background-color: #DD534F;
     color: white;
+  }
+
+  .ticktock {
+    color: orange;
   }
 </style>
 
-<article class:timer="{active === true}" class:active="{active === false}">
-  <p>{minutes}:{seconds}</p>
+<article on:click={setInactive} class:timer="{active === true}" class:active="{active === false}">
+  {#if active === true}
+    <h4>Your egg is cooking...</h4>
+    <p>Remaining: <span class="ticktock">{minutes}:{seconds}</span></p>
+  {:else}
+    <p>Shit! Time to get your eggs!<span class="ticktock">{minutes}:{seconds}</span></p>
+  {/if}
 </article>
 
