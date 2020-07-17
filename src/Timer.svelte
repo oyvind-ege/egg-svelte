@@ -1,6 +1,5 @@
 <script>
   import { onMount } from "svelte";
-  import { createEventDispatcher } from 'svelte';
 
   export let secondsRemaining;
   let active = true;
@@ -8,10 +7,6 @@
 
   $: minutes = Math.floor(secondsRemaining / 60);
   $: seconds = Math.floor(secondsRemaining - minutes * 60).toString().padStart(2, '0');
-
-  const setInactive = () => {
-    console.log('Should set to inactive.');
-  }
 
   const updateTimer = () => {
     if (secondsRemaining === 1){
@@ -53,7 +48,7 @@
   }
 </style>
 
-<article on:click={setInactive} class:timer="{active === true}" class:active="{active === false}">
+<article class:timer="{active === true}" class:active="{active === false}">
   {#if active === true}
     <h4>Your egg is cooking...</h4>
     <p>Remaining: <span class="ticktock">{minutes}:{seconds}</span></p>
