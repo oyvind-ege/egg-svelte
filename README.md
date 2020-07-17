@@ -1,5 +1,5 @@
 # egg-svelte
-An egg timer using Svelte for frontend and Express for backend.
+An egg timer that takes your location/altitude into account, using Svelte for frontend and Express for backend.
 
 A one-day project built during my time at SALT. 
 
