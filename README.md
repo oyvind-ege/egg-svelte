@@ -10,7 +10,7 @@ Client needs two key variables to compute boiling time: egg-size, and elevation.
 
 ### Elevation
 
-The boiling point of water is normally 100 celcius, but decreases by 0.5C for every 150m increase in altitude. This means that the time it takes for the egg yolk to boil increases with altitude.
+The boiling point of water is normally 100 celcius, but decreases by 0.5C for every 150m increase in altitude. This means that the time it takes for the egg yolk to reach a given temperature increases with altitude.
 
 To solve this, we fetch the altitude of the user.
 
