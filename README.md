@@ -3,6 +3,12 @@ An egg timer that takes your location/altitude into account. The project consist
 
 A one-day project built during my time at SALT. 
 
+## Formula
+
+The boiling time formula is taken from: https://www.mn.uio.no/kjemi/tjenester/kunnskap/egg/
+
+![alt text](https://www.mn.uio.no/kjemi/tjenester/kunnskap/egg/formel.jpg "Egg-boiling formula")
+
 ## Basic flow
 
 Client needs two key variables to compute boiling time: egg-size, and elevation.
