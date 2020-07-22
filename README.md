@@ -3,6 +3,14 @@ An egg timer that takes your location/altitude into account. The project consist
 
 A one-day project built during my time at SALT. 
 
+## Building the project
+
+The app requires the following environment variables from a .env file in the root folder:
+
+SERVER_PORT -- the desired server port number
+ELEVATION_API_KEY -- an API key from https://elevation-api.io/
+OPENCAGE_API_KEY -- an API key from https://opencagedata.com/api
+
 ## Formula
 
 The boiling time formula is taken from: https://www.mn.uio.no/kjemi/tjenester/kunnskap/egg/
