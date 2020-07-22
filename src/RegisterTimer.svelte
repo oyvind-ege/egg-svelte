@@ -25,6 +25,7 @@
 
   let eggOptions = [{ type: "Loading...", temperature: 65 }];
 
+  //TODO: Fetch correct regional data depending on user's current latitude and longitude
   const setEggOptions = async () => {
     const response = await (await fetch('http://localhost:8080/api/regions')).json();
     return response.data[0].eggs;
@@ -36,7 +37,6 @@
 
   onMount(async () => {
     eggOptions = await setEggOptions();
-    console.log('Mounting register', userlocation, typeof userlocation);
     const elevation = await (await fetch(`http://localhost:8080/api/elevations/${userlocation.latitude}/${userlocation.longitude}`)).json();
     egg.waterTemp = calculateBoilingPointFromElevation( elevation.data.elevation );
     console.log('Water temp set to', egg.waterTemp, 'for elevation of', elevation.data.elevation);

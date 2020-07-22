@@ -1,7 +1,15 @@
 # egg-svelte
-An egg timer that takes your location/altitude into account. The project consists of a clientside, using Svelte, and a REST API built with Express.
+The project consists of a clientside, using Svelte, and a REST API built with Express.
 
 A one-day project built during my time at SALT. 
+
+I chose to delve into Svelte for the first time and write a simple app that calculates the time it takes to boil an egg depending on egg-size, elevation, and temperature.
+
+## Feature list
+
+* Calculates the time it takes to achieve soft-boiled, medium-boiled and hard-boiled eggs depending on their size, the elevation at the user's location, and the initial temperature of the egg.
+* Adds a timer with a per-second countdown, and displays time in xx:xx form. Upon reaching zero, timer will visually change to alert the user.
+* Supports multiple timers.
 
 ## Building the project
 
@@ -40,3 +48,12 @@ Egg sizes are surprisingly standardized. Europe, NA, Australia, Brazil, all have
 To my knowledge, there is no publicly available API providing this data, so I added the european data to a REST API endpoint: /regions.
 
 The client therefore fetches the egg sizes and their names from the /regions endpoint, and uses this in the formula.
+
+## Wishlist
+
+* A "You are here" bar that indicates the current registered location of the user
+* Additional egg-sizes for different regions
+* Dynamically populate the list of egg-sizes depending on the user's current region
+* A more appealing look, perhaps including a visual indication of each egg: an SVG animation of an increasingly coagulating egg-yolk?
+* Secure user login
+
