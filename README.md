@@ -25,10 +25,11 @@ The boiling time formula is taken from: https://www.mn.uio.no/kjemi/tjenester/ku
 
 ![alt text](https://www.mn.uio.no/kjemi/tjenester/kunnskap/egg/formel.jpg "Egg-boiling formula")
 
-where c = egg circumference (in cm)
-T<sub>vann</sub> is the boiling point of water (in celcius)
-T<sub>0</sub> is the initial temperature of the egg (in celcius)
-T<sub>plomme</sub> is the desired temperature of the yolk (in celcius)
+where 
+* c = egg circumference (in cm)
+* T<sub>vann</sub> is the boiling point of water (in celcius)
+* T<sub>0</sub> is the initial temperature of the egg (in celcius)
+* T<sub>plomme</sub> is the desired temperature of the yolk (in celcius)
 
 ## Basic flow
 
