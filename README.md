@@ -1,7 +1,5 @@
 # egg-svelte
-The project consists of a clientside, using Svelte, and a REST API built with Express.
-
-A one-day project built during my time at SALT. 
+A one-day project built during my time at SALT. The project consists of a clientside, using Svelte, and a REST API built with Express.
 
 I chose to delve into Svelte for the first time and write a simple app that calculates the time it takes to boil an egg depending on egg-size, elevation, and temperature.
 
