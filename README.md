@@ -7,9 +7,9 @@ A one-day project built during my time at SALT.
 
 The app requires the following environment variables from a .env file in the root folder:
 
-SERVER_PORT -- the desired server port number
-ELEVATION_API_KEY -- an API key from https://elevation-api.io/
-OPENCAGE_API_KEY -- an API key from https://opencagedata.com/api
+* SERVER_PORT -- the desired server port number
+* ELEVATION_API_KEY -- an API key from https://elevation-api.io/
+* OPENCAGE_API_KEY -- an API key from https://opencagedata.com/api
 
 ## Formula
 
