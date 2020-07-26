@@ -5,7 +5,7 @@ const api = require('./api');
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../client/public')));
 app.use('/api', api);
 
 module.exports = app;
