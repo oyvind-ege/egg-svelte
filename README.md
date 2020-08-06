@@ -17,6 +17,9 @@ The app requires the following environment variables from a .env file in the roo
 * ELEVATION_API_KEY -- an API key from https://elevation-api.io/
 * OPENCAGE_API_KEY -- an API key from https://opencagedata.com/api
 
+
+Run `npm install` and `npm start` to build the project and run the server. Then access localhost:SERVER_PORT to see the app in action.
+
 ## Formula
 
 The boiling time formula is taken from: https://www.mn.uio.no/kjemi/tjenester/kunnskap/egg/
