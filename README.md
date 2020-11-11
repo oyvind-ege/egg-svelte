@@ -3,11 +3,19 @@ A one-day project built during my time at SALT. The project consists of a client
 
 I chose to delve into Svelte for the first time and write a simple app that calculates the time it takes to boil an egg depending on egg-size, elevation, and temperature.
 
+---
+
+<p align="center">
+  <img width="400" src="https://i.imgur.com/RqLhgOV.png" />
+</p>
+
+
 ## Feature list
 
 * Calculates the time it takes to achieve soft-boiled, medium-boiled and hard-boiled eggs depending on their size, the elevation at the user's location, and the initial temperature of the egg.
 * Adds a timer with a per-second countdown, and displays time in xx:xx form. Upon reaching zero, timer will visually change to alert the user.
 * Supports multiple timers.
+
 
 ## Building the project
 
